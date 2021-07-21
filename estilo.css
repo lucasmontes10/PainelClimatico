@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     margin: 0;
     box-sizing: border-box;
@@ -17,4 +18,114 @@
     background-color: #333;
     z-index: 4;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-area{
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-area h1{
+    color: white;
+    font-size: 56px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+.form-busca{
+    margin-top: 22px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+}
+#buscador{
+    flex: 1;
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0;
+}
+.form-busca button{
+    padding: 10px;
+    font-size: 15px;
+    border: 0;
+    background-color: #555;
+    color: #FFF;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.resultado {
+    width: 300px;
+    display: none;
+    border: 1px dotted #FFF;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+    width: 100%;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+}
+.info .temp {
+    flex: 1;
+    text-align: center;
+}
+.info .vento {
+    flex: 1;
+    text-align: center;
+}
+.tempTitulo,
+.ventoTitulo {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.tempInfo,
+.ventoInfo {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+}
+.tempInfo sup {
+    font-size: 15px;
+    font-weight: normal;
+}
+.ventoInfo span {
+    font-size: 15px;
+    font-weight: normal;
+}
+.ventoArea {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.ventoPonto {
+    width: 15px;
+    height: 1px;
+    background-color: #FFF;
+    transform-origin: left;
+}
+
+.aviso {
+    color: #FFF;
+    padding-top: 20px;
 }
