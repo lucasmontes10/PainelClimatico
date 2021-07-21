@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.principal{
+    height: 100vh;
+    background-image: url(img/bg.png);
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clima-area{
+    width: 650px;
+    height: 700px;
+    background-color: #333;
+    z-index: 4;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
