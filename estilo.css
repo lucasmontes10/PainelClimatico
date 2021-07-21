@@ -3,11 +3,25 @@
     margin: 0;
     box-sizing: border-box;
 }
-.principal{
+.geral{
     height: 100vh;
+    display: flex;
+}
+.side-bar{
+    height: 100%;
+    width: 500px;
+    transform: skew(25deg);
+    margin-left: -250px;
     background-image: url(img/bg.png);
     background-size: cover;
-    background-position: left;
+    background-position: center;
+}
+.principal{
+    flex: 1;
+    height: 100vh;
+    /* background-image: url(img/bg.png); */
+    /* background-size: cover;
+    background-position: left; */
     display: flex;
     align-items: center;
     justify-content: center;
