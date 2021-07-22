@@ -1,7 +1,6 @@
 document.querySelector('.form-busca').addEventListener('submit', async (evento)=>{
         evento.preventDefault(); //Evitando o comportando padrão da função que seria o envio do formulario
         document.querySelector('.resultado').style.display = 'none';
-        document.querySelector('.side-bar').style.backgroundImage = 'url(img/bg.png)';
         let input_result = document.querySelector('#buscador').value;
         if (input_result != ''){
             warningEdit('carregando...');
@@ -40,6 +39,7 @@ function printarResultado(json){
     console.log(json.desc);
     if(json.desc == 'céu limpo'){
         document.querySelector('.side-bar').classList.add('animacao1');
+        document.querySelector('.side-bar')
     }
 }
 
