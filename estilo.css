@@ -73,12 +73,13 @@
     cursor: pointer;
 }
 .resultado {
-    width: 300px;
+    width: 400px;
     display: none;
-    border: 1px dotted #FFF;
-    margin-top: 50px;
+    border: 2px dotted #FFF;
+    margin-top: 100px;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto', sans-serif;
 }
 
 .titulo {
@@ -88,6 +89,14 @@
     font-weight: bold;
     text-align: center;
     padding: 20px;
+}
+.subtitle{
+    width: 100%;
+    color: #FFF;
+    font-size: 15px;
+    text-align: center;
+    padding: 18px;
+    margin-top: -15px;
 }
 
 .info {
@@ -144,4 +153,33 @@
     padding-top: 20px;
     font-size: 21px;
     font-family: 'Roboto', sans-serif;
+}
+
+.vento span{
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+}
+
+.animacao1{
+    animation: changeBg1 4s;
+    background-image: url(img/ceu_claro.png);
+}
+
+@keyframes changeBg1{
+    0%{
+        background-image: url(img/bg.png);
+    }
+    25%{
+        background-image: url(img/bg.png);
+    }
+    50%{
+        background-image: url(img/ceu_claro.png);
+    }
+    75%{
+        background-image: url(img/ceu_claro.png);
+    }
+    100%{
+        background-image: url(img/ceu_claro.png);
+    }
 }
