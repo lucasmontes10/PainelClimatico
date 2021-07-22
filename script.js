@@ -8,7 +8,6 @@ document.querySelector('.form-busca').addEventListener('submit', async (evento)=
             //Não esquecer de transformar o input desejado com o encodeURI
             let result_api = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(input_result)}&appid=f43c43738c866597d2d297da9a914aa4&units=metric&lang=pt_br`);
             let json = await result_api.json();
-            console.log(json);
             if (json.cod == 200){
                 printarResultado({
                     nome: json.name,
@@ -38,8 +37,19 @@ function printarResultado(json){
     document.querySelector('.resultado').style.display = 'block';
     console.log(json.desc);
     if(json.desc == 'céu limpo'){
+        document.querySelector('.side-bar').classList.remove('animacao2');
+        document.querySelector('.side-bar').classList.remove('animacao1');
+        document.querySelector('.side-bar').classList.remove('animacao3');
         document.querySelector('.side-bar').classList.add('animacao1');
-        document.querySelector('.side-bar')
+    } else if(json.desc.search('chuva') !== -1){
+        document.querySelector('.side-bar').classList.remove('animacao2');
+        document.querySelector('.side-bar').classList.remove('animacao1');
+        document.querySelector('.side-bar').classList.add('animacao2');
+    } else if (json.desc.search('nublado') !== -1  || json.desc.search('nuvens') !== -1)  {
+        document.querySelector('.side-bar').classList.remove('animacao2');
+        document.querySelector('.side-bar').classList.remove('animacao1');
+        document.querySelector('.side-bar').classList.remove('animacao3');
+        document.querySelector('.side-bar').classList.add('animacao3');
     }
 }
 
