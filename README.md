@@ -1,4 +1,4 @@
-# PainelClimatico
+# PainelMeteorologico
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/lucasmontes10/PainelMetereologico/blob/main/LICENSE)
 
